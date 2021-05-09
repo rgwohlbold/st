@@ -78,7 +78,7 @@ static unsigned int cursorthickness = 2;
 static int bellvolume = 0;
 
 /* default TERM value */
-char *termname = "st-256color";
+char *termname = "xterm-256color";
 
 /*
  * spaces per tab
@@ -224,8 +224,8 @@ static Shortcut shortcuts[] = {
 	{TERMMOD, XK_J, zoom, {.f = -1}},
 	{TERMMOD, XK_U, zoom, {.f = +2}},
 	{TERMMOD, XK_D, zoom, {.f = -2}},
-	{TERMMOD, XK_N, changealpha, {.f = +0.1}},
-	{TERMMOD, XK_M, changealpha, {.f = -0.1}},
+	{TERMMOD, XK_N, changealpha, {.f = -0.1}},
+	{TERMMOD, XK_M, changealpha, {.f = +0.1}},
 	{MODKEY, XK_l, externalpipe, {.v = openurlcmd}},
 	{MODKEY, XK_y, externalpipe, {.v = copyurlcmd}},
 	{MODKEY, XK_o, externalpipe, {.v = copyoutput}},
